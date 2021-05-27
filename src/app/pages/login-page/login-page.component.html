@@ -1,0 +1,8 @@
+<form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+  <div class='login'>
+    <h2>Մուտք</h2>
+    <input name='email' placeholder='Մուտքանուն կամ Էլ-փոստ' type='text' formControlName="email">
+    <input id='pw' name='password' placeholder='Գախտնաբառ' type='password' formControlName="password">
+    <input class='animated' type='submit' value='Մուտք'>
+  </div>
+</form>

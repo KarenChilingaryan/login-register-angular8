@@ -1,0 +1,18 @@
+<form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+  <div class="container">
+    <div class="row">
+      <div class='login'>
+        <h2>Գրանցում</h2>
+        <input name='username' placeholder='Մուտքանուն' type='text' formControlName="username">
+        <input id='pw' name='password' placeholder='Գախտնաբառ' type='password' formControlName="password">
+        <input name='email' placeholder='Էլ-փոստ' type='text' formControlName="email">
+        <input name='specialist' placeholder='Մասնագիտություն' type='text' formControlName="specialist">
+        <input class='animated' type='submit' value='Գրանցում'>
+        <a class='forgot' href='#'>Արդեն գրանցված ե՞ք</a>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
